@@ -8,19 +8,20 @@
     try {
         hs = event_date - now_date;
         hs = Math.ceil(hs / (1000 * 60 * 60 * 24)) // milisegundos pra dias
-        hs = hs > 0 ? hs : 0;
     } catch (e) {
         console.log("=CavokHS= ERRO em Date.parse dentro de hsbox. Verifique os parâmetros ou a função.");
         console.error(e);
-        hs = 0;
+        hs = -1;
     }
 </script>
 
+{#if hs >= 0}
 <div class="container">
     <p class="title">{@html namePropHTML}</p>
     <p class="hs">HS-{hs.toString()}</p>
     <p class="date">Data estimada: {dateProp.split("-")[2]}/{dateProp.split("-")[1]}/{dateProp.split("-")[0]}</p>
 </div>
+{/if}
 
 <style>
     .container {
