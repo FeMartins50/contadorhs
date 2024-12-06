@@ -6,8 +6,12 @@
     <!-- <h1>Eventos Importantes</h1> -->
     <BoxHS namePropHTML={"Formatura EPCAR"} dateProp={"2024-12-13"} />
     
-    <BoxHS namePropHTML={"Espadim"} dateProp={"2025-06-11"} />
+    <BoxHS namePropHTML={"Espadim"} dateProp={"2025-07-04"} />
     
+    <BoxHS namePropHTML={"NAVAMAER"} dateProp={"2025-08-22"} />
+
+    <BoxHS namePropHTML={"INTERAFA"} dateProp={"2025-11-21"} />
+
     <BoxHS namePropHTML={"Aspirantado"} dateProp={"2028-12-08"} />
 </section>
 
