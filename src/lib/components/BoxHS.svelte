@@ -6,7 +6,7 @@
     // Cálculo do HS
     let hs = 0;
     try {
-        hs = event_date - now_date;
+        hs = event_date - now_date + (3 * 60 * 60 * 1000);
         hs = Math.ceil(hs / (1000 * 60 * 60 * 24)) // milisegundos pra dias
     } catch (e) {
         console.log("=CavokHS= ERRO em Date.parse dentro de hsbox. Verifique os parâmetros ou a função.");
